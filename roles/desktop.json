@@ -1,0 +1,6 @@
+{
+  "name": "desktop",
+  "run_list": [
+    "recipe[desktop::default]"
+  ]
+}

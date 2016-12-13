@@ -1,0 +1,28 @@
+#!/bin/bash -le
+
+echo "poor man's Berkshelf... replace me"
+
+cookbook=$1
+
+if [ -d cookbooks/$cookbook ]
+then
+  echo "Cookbook $cookbook exists, skipping"
+  exit 0
+fi
+
+cd tmp
+
+echo "Downloading $cookbook"
+knife cookbook site download $cookbook
+
+echo "Unpacking..."
+tar xfv $cookbook*.tar.gz
+
+echo "Cleaning up"
+rm $cookbook*.tar.gz
+
+echo "Moving to cookbooks directory"
+mv $cookbook ../cookbooks/
+
+
+cd -
