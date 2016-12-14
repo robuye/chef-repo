@@ -1,0 +1,12 @@
+[Unit]
+Description=OpenVPN to %I
+AssertPathExists=/media/rob/crypt/openvpn/%i.ovpn
+
+[Service]
+PrivateTmp=true
+Type=forking
+PIDFile=/var/run/openvpn/%i.pid
+ExecStart=/usr/sbin/openvpn --daemon --writepid /var/run/openvpn/%i.pid --config /media/rob/crypt/openvpn/%i.ovpn
+
+[Install]
+WantedBy=multi-user.target

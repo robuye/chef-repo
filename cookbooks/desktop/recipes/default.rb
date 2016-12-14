@@ -18,3 +18,6 @@ include_recipe "redisio::redis_gem"
 bash "rbenv rehash" do
   code "rbenv rehash"
 end
+
+include_recipe "#{cookbook_name}::openvpn"
+include_recipe "#{cookbook_name}::docker"
