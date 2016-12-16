@@ -13,3 +13,5 @@ apt_repository "google-chrome" do
 end
 
 package "google-chrome-stable"
+package "liblua5.2-dev"
+package "lua5.2"
