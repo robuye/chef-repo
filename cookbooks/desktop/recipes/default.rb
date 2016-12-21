@@ -21,3 +21,4 @@ end
 
 include_recipe "#{cookbook_name}::openvpn"
 include_recipe "#{cookbook_name}::docker"
+include_recipe "#{cookbook_name}::other"
