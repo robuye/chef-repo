@@ -14,7 +14,7 @@ file "/etc/subuid" do
   content <<-EOS
 rob:100000:65536
 dockremap:1000:1
-dockremap:500000:65536
+dockremap:50000:65536
   EOS
   notifies :restart, "docker_service[default]", :delayed
 end
@@ -24,7 +24,7 @@ file "/etc/subgid" do
   content <<-EOS
 rob:100000:65536
 dockremap:1000:1
-dockremap:500000:65536
+dockremap:50000:65536
   EOS
   notifies :restart, "docker_service[default]", :delayed
 end

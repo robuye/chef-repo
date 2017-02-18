@@ -3,6 +3,7 @@ package "htop"
 package "curl"
 package "cryptsetup"
 package "tmux"
+package "byobu"
 
 apt_repository "google-chrome" do
   uri "http://dl.google.com/linux/chrome/deb/"

@@ -13,7 +13,7 @@ fi
 cd tmp
 
 echo "Downloading $cookbook"
-knife cookbook site download $cookbook
+bundle exec knife cookbook site download $cookbook
 
 echo "Unpacking..."
 tar xfv $cookbook*.tar.gz
