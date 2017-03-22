@@ -2,6 +2,9 @@ include_recipe "apt::default"
 include_recipe "build-essential::default"
 include_recipe "#{cookbook_name}::systools"
 include_recipe "#{cookbook_name}::git"
+
+package "openjdk-8-jre" # for JRuby
+
 include_recipe "ruby_build::default"
 include_recipe "ruby_rbenv::system"
 include_recipe "postgresql::client"
