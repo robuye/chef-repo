@@ -7,7 +7,7 @@ default.git.core.editor = "vim"
 default.ruby_build.upgrade = true
 
 default.rbenv.upgrade = true
-default.rbenv.rubies = [ "2.3.3" ]
+default.rbenv.rubies = [ "2.1.9", "2.3.3" ]
 default.rbenv.global = "2.3.3"
 
 

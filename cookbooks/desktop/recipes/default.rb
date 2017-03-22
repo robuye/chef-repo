@@ -15,9 +15,7 @@ include_recipe "redisio::default"
 include_recipe "redisio::disable"
 include_recipe "redisio::redis_gem"
 
-bash "rbenv rehash" do
-  code "rbenv rehash"
-end
+rbenv_rehash "rehash"
 
 include_recipe "#{cookbook_name}::openvpn"
 include_recipe "#{cookbook_name}::docker"

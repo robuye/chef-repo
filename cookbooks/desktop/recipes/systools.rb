@@ -4,6 +4,8 @@ package "curl"
 package "cryptsetup"
 package "tmux"
 package "byobu"
+package "mailutils"
+package "maildir-utils"
 
 apt_repository "google-chrome" do
   uri "http://dl.google.com/linux/chrome/deb/"
